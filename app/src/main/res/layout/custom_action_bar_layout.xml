@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="36dp">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/ic_united_kingdom_1"
+        android:layout_margin="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/lessonsCompleteCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubik_bold"
+        android:textSize="20sp"
+        android:text="@string/fragment_lesson_default_value"
+        android:textColor="@color/gold"
+        android:layout_margin="5dp"
+        app:layout_constraintEnd_toStartOf="@id/lessonsCrown"
+        app:layout_constraintTop_toTopOf="@id/lessonsCrown"
+        app:layout_constraintBottom_toBottomOf="@id/lessonsCrown"
+        />
+
+    <ImageView
+        android:id="@+id/lessonsCrown"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_margin="5dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/ic_ri_vip_crown_2_line"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:background="@drawable/rectangle_with_borders_grey"
+    android:layout_marginBottom="12dp">
+
+
+    <TextView
+        android:id="@+id/lessonsName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        tools:text="@string/lessons_lesson_name"
+        android:fontFamily="@font/rubik_bold"
+        android:textColor="@color/black"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/lessonsNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/lessonsName"
+        app:layout_constraintTop_toTopOf="@id/lessonsName"
+        app:layout_constraintBottom_toBottomOf="@id/lessonsName"
+        android:layout_marginStart="7dp"
+        tools:text="1"
+        android:fontFamily="@font/rubik_bold"
+        android:textColor="@color/black"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/lessonsWordsCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@id/lessonsName"
+        app:layout_constraintTop_toBottomOf="@id/lessonsName"
+        tools:text="54"
+        android:fontFamily="@font/rubik_medium"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/lessonsWords"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        app:layout_constraintStart_toEndOf="@id/lessonsWordsCount"
+        app:layout_constraintTop_toTopOf="@id/lessonsWordsCount"
+        android:text="@string/lessons_words"
+        android:fontFamily="@font/rubik_medium"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/lessonsPhrasesCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@id/lessonsName"
+        app:layout_constraintTop_toBottomOf="@id/lessonsWordsCount"
+        tools:text="21"
+        android:fontFamily="@font/rubik_medium"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/lessonsPhrases"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        app:layout_constraintStart_toEndOf="@id/lessonsWordsCount"
+        app:layout_constraintTop_toTopOf="@id/lessonsPhrasesCount"
+        android:text="@string/lessons_phrases"
+        android:fontFamily="@font/rubik_medium"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/lessonsSoundsCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@id/lessonsName"
+        app:layout_constraintTop_toBottomOf="@id/lessonsPhrasesCount"
+        tools:text="21"
+        android:fontFamily="@font/rubik_medium"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/lessonsSounds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        app:layout_constraintStart_toEndOf="@id/lessonsSoundsCount"
+        app:layout_constraintTop_toTopOf="@id/lessonsSoundsCount"
+        android:text="@string/lessons_sounds"
+        android:fontFamily="@font/rubik_medium"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/lessonsStar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/lessonsSoundsCount"
+        app:layout_constraintStart_toStartOf="@id/lessonsName"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/ic_ant_design_star_filled"
+        />
+
+    <TextView
+        android:id="@+id/lessonsTaskOutOfTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        app:layout_constraintStart_toEndOf="@id/lessonsStar"
+        app:layout_constraintTop_toTopOf="@id/lessonsStar"
+        tools:text="3 /"
+        android:fontFamily="@font/rubik_medium"
+        android:textSize="8sp" />
+
+    <TextView
+        android:id="@+id/lessonsTaskTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        app:layout_constraintStart_toEndOf="@id/lessonsTaskOutOfTotal"
+        app:layout_constraintTop_toTopOf="@id/lessonsTaskOutOfTotal"
+        tools:text="21"
+        android:fontFamily="@font/rubik_medium"
+        android:textSize="8sp" />
+
+    <ProgressBar
+        android:id="@+id/lessonsDeterminateBar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="100dp"
+        android:layout_height="8dp"
+        android:layout_marginStart="10dp"
+        tools:progress="25"
+        android:progressTint="@color/green_main"
+        android:progressBackgroundTint="@color/grey"
+        app:layout_constraintStart_toEndOf="@id/lessonsTaskTotal"
+        app:layout_constraintTop_toTopOf="@id/lessonsTaskTotal"
+        app:layout_constraintBottom_toBottomOf="@id/lessonsTaskTotal"
+        />
+
+
+
+    <ImageView
+        android:id="@+id/lessonsPhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/ic_vector_photo"
+        tools:ignore="ContentDescription,UnusedAttribute" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_lessons">
+
+    <fragment
+        android:id="@+id/navigation_lessons"
+        android:name="com.unolingua.unolinguaapp.ui.lessons.LessonsFragment"
+        android:label="@string/title_lessons"
+        tools:layout="@layout/fragment_lessons" />
+
+    <fragment
+        android:id="@+id/navigation_theory"
+        android:name="com.unolingua.unolinguaapp.ui.theory.TheoryFragment"
+        android:label="@string/title_theory"
+        tools:layout="@layout/fragment_theory" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.unolingua.unolinguaapp.ui.profile.ProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile" />
+    
+    <fragment
+        android:id="@+id/navigation_rating"
+        android:name="com.unolingua.unolinguaapp.ui.rating.RatingFragment"
+        android:label="@string/title_rating"
+        tools:layout="@layout/fragment_rating" />
+    
+    <fragment
+        android:id="@+id/navigation_favourites"
+        android:name="com.unolingua.unolinguaapp.ui.favourites.FavouritesFragment"
+        android:label="@string/title_favourites"
+        tools:layout="@layout/fragment_favourites" />
+</navigation>

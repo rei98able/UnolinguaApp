@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<font-family xmlns:android="http://schemas.android.com/apk/res/android">
+    <font
+            android:fontStyle="normal"
+            android:fontWeight="400"
+            android:font="@font/rubik_black" />
+    <font
+            android:fontStyle="italic"
+            android:fontWeight="400"
+            android:font="@font/rubik_black_italic" />
+    <font
+            android:fontStyle="normal"
+            android:fontWeight="400"
+            android:font="@font/rubik_bold" />
+    <font
+            android:fontStyle="italic"
+            android:fontWeight="400"
+            android:font="@font/rubik_bold_italic" />
+    <font
+            android:fontStyle="italic"
+            android:fontWeight="400"
+            android:font="@font/rubik_italic" />
+    <font
+            android:fontStyle="italic"
+            android:fontWeight="400"
+            android:font="@font/rubik_italic_variable_font_wght" />
+    <font
+            android:fontStyle="normal"
+            android:fontWeight="400"
+            android:font="@font/rubik_light" />
+    <font
+            android:fontStyle="italic"
+            android:fontWeight="400"
+            android:font="@font/rubik_light_italic" />
+    <font
+            android:fontStyle="normal"
+            android:fontWeight="400"
+            android:font="@font/rubik_medium" />
+    <font
+            android:fontStyle="italic"
+            android:fontWeight="400"
+            android:font="@font/rubik_medium_italic" />
+    <font
+            android:fontStyle="normal"
+            android:fontWeight="400"
+            android:font="@font/rubik_regular" />
+    <font
+            android:fontStyle="normal"
+            android:fontWeight="400"
+            android:font="@font/rubik_semibold" />
+    <font
+            android:fontStyle="italic"
+            android:fontWeight="400"
+            android:font="@font/rubik_semibold_italic" />
+    <font
+            android:fontStyle="normal"
+            android:fontWeight="400"
+            android:font="@font/rubik_variable_font_wght" />
+</font-family>

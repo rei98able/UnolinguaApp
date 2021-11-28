@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">Unolingua App</string>
+    <string name="title_lessons">Lessons</string>
+    <string name="title_theory">Theory</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_rating">Rating</string>
+    <string name="title_favourites">Favourites</string>
+    <string name="welcome">Welcome to the Unolingua!</string>
+    <string name="welcome_latin">Lorem ipsum dolor sit amet, consectetur adiis turpis a aliquam arcu id. Praesent faucibus neque enim tellus sollicitudin pulvinar neque, vitae. Mi nec vel a sapien sed neque.</string>
+    <string name="welcome_login">Log in</string>
+    <string name="welcome_signup">Sign up</string>
+    <string name="sign_up_go_through">go through</string>
+    <string name="sign_up_facebook">Facebook</string>
+    <string name="sign_up_google">Google</string>
+    <string name="sign_up_through_email">through e-mail</string>
+    <string name="sign_up_email">E-mail</string>
+    <string name="sign_up_password">Password</string>
+    <string name="sign_up_password_repeat">Repeat password</string>
+    <string name="sign_up_agree">I agree with the privacy policy</string>
+    <string name="log_in_enter">Enter</string>
+    <string name="log_in_or_use">or use</string>
+    <string name="choose_language_english">English</string>
+    <string name="choose_language_your">Choose your language</string>
+    <string name="choose_language_change_it">You can change it any time.</string>
+    <string name="fragment_lesson_default_value">0</string>
+    <string name="lessons_welcome_video">Hi! I\'m Uno. I\'ll help you to learn Russian.</string>
+    <string name="lessons_watch_the_instructions">Watch the instruction and let\'s go!</string>
+    <string name="lessons_lesson_name">Lesson</string>
+    <string name="lessons_words">words</string>
+    <string name="lessons_phrases">phrases</string>
+    <string name="lessons_sounds">sounds</string>
+    <string name="lesson_start_task">- Task 1</string>
+    <string name="lesson_start_you_will">You will learn:</string>
+    <string name="lesson_start_button">Start</string>
+    <string name="profile_days">days</string>
+    <string name="profile_hours">hours</string>
+    <string name="profile_lessons">lessons</string>
+    <string name="profile_statistics">Statistics</string>
+    <string name="profile_weak_points">Weak points</string>
+    <string name="profile_weak_repeat_lessons">Repeat all lessons</string>
+    <string name="profile_weak_repeat_all">Repeat all</string>
+    <string name="profile_exercises">exercises</string>
+    <string name="profile_exercises_for_phrases">exercises for phrases</string>
+    <string name="rating_compete">compete every week and become the best</string>
+    <string name="rating_d">d.</string>
+    <string name="rating_h">h.</string>
+    <string name="rating_m">m.</string>
+    <string name="rating_points">points</string>
+    <string name="theory_instruction">Instruction</string>
+    <string name="theory_lesson_topic">Topic</string>
+    <string name="theory_lesson_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis commodo, in ornare adipiscing mi felis ultricies porttitor. Nisi orci nulla feugiat orci. Ut magna aliquam eget pellentesque arcu, non. Nibh eleifend vitae viverra enim lobortis velit. Morbi tempor commodo volutpat pellentesque justo, metus sagittis. Tincidunt est aliquet felis a dui at amet bibendum posuere. Libero feugiat gravida et egestas facilisis justo, tortor, vitae cursus. Ultricies orci lacinia suspendisse suspendisse. In egestas ipsum ultricies sit risus magna felis. Vestibulum urna sed nunc nulla nisi, facilisi nam. Suspendisse non, lectus morbi amet arcu mi amet fames vel. Magna netus urna ut viverra venenatis risus. Quam bibendum sem gravida morbi viverra. Commodo arcu aenean aenean sapien fermentum commodo felis semper augue. Velit eu vestibulum accumsan imperdiet senectus lacinia vitae. Aliquam porttitor velit fermentum aenean et nunc morbi egestas. Varius volutpat non vitae integer dui aliquet. Augue metus, arcu placerat massa imperdiet. Nam sit vitae, convallis at in netus ut morbi at. Aliquam pellentesque pharetra convallis velit metus diam lorem ut. Viverra arcu amet nullam blandit nulla vel magna nec.</string>
+
+
+</resources>

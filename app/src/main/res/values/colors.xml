@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="black_light">#817E7E</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blue_light">#76C7F5</color>
+    <color name="blue_extra_light">#76C7F5</color>
+    <color name="blue_ultra_light">#C8EBFF</color>
+    <color name="grey">#C8C8C8</color>
+    <color name="grey_light">#E2E2E2</color>
+    <color name="grey_light_new">#EEEEEE</color>
+    <color name="grey_light_profile">#969595</color>
+    <color name="grey_hard">#61000000</color>
+    <color name="grey_ultra_hard">#8A8A8A</color>
+    <color name="green_main">#DAFF70</color>
+    <color name="green_extra_light">#D1FFCA</color>
+    <color name="green_light">#83E8FD68</color>
+    <color name="green_hard">#F1FF9A</color>
+    <color name="green_medium">#D0EE7C</color>
+    <color name="green_shine">#CBE42B</color>
+    <color name="gold">#E3B615</color>
+    <color name="pink_light">#FFE8FF</color>
+    <color name="yellow_light">#F7FFE0</color>
+    <color name="pink">#FFD0D0</color>
+    <color name="red">#E83023</color>
+</resources>

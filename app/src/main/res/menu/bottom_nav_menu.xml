@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_lessons"
+        android:icon="@drawable/ic_lessons"
+        android:title="@string/title_lessons" />
+
+    <item
+        android:id="@+id/navigation_theory"
+        android:icon="@drawable/ic_theory"
+        android:title="@string/title_theory" />
+
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/ic_profile"
+        android:title="@string/title_profile" />
+
+    <item
+        android:id="@+id/navigation_rating"
+        android:icon="@drawable/ic_rating"
+        android:title="@string/title_rating" />
+
+    <item
+        android:id="@+id/navigation_favourites"
+        android:icon="@drawable/ic_favourites"
+        android:title="@string/title_favourites" />
+
+</menu>

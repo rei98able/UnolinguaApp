@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="20dp">
+
+    <TextView
+        android:id="@+id/ratingTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubik_bold"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:layout_marginTop="20dp"
+        android:text="@string/title_rating"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/ratingCompete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubik_light"
+        android:textColor="@color/grey_ultra_hard"
+        android:textSize="14sp"
+        android:layout_marginTop="10dp"
+        android:text="@string/rating_compete"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ratingTitle"
+        />
+
+    <TextView
+        android:id="@+id/ratingDaysCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubik_bold"
+        android:textColor="@color/gold"
+        android:layout_marginEnd="40dp"
+        android:textSize="16sp"
+        android:text="@string/fragment_lesson_default_value"
+        app:layout_constraintTop_toTopOf="@id/ratingHours"
+        app:layout_constraintEnd_toStartOf="@id/ratingHoursCount"
+        />
+
+    <TextView
+        android:id="@+id/ratingDays"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubik_bold"
+        android:textColor="@color/gold"
+        android:layout_marginStart="5dp"
+        android:textSize="16sp"
+        android:text="@string/rating_d"
+        app:layout_constraintTop_toTopOf="@id/ratingHours"
+        app:layout_constraintStart_toEndOf="@id/ratingDaysCount"
+        />
+
+    <TextView
+        android:id="@+id/ratingHoursCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubik_bold"
+        android:textColor="@color/gold"
+        android:textSize="16sp"
+        android:layout_marginEnd="5dp"
+        android:text="@string/fragment_lesson_default_value"
+        app:layout_constraintTop_toTopOf="@id/ratingHours"
+        app:layout_constraintEnd_toStartOf="@id/ratingHours"
+        />
+
+    <TextView
+        android:id="@+id/ratingHours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubik_bold"
+        android:textColor="@color/gold"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:text="@string/rating_h"
+        app:layout_constraintTop_toBottomOf="@id/ratingCompete"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/ratingMinutesCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubik_bold"
+        android:textColor="@color/gold"
+        android:textSize="16sp"
+        android:layout_marginStart="20dp"
+        android:text="@string/fragment_lesson_default_value"
+        app:layout_constraintTop_toTopOf="@id/ratingHours"
+        app:layout_constraintStart_toEndOf="@id/ratingHours"
+        />
+
+    <TextView
+        android:id="@+id/ratingMinutes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubik_bold"
+        android:textColor="@color/gold"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:text="@string/rating_m"
+        app:layout_constraintTop_toBottomOf="@id/ratingCompete"
+        app:layout_constraintStart_toEndOf="@id/ratingMinutesCount"
+        />
+
+    <ImageView
+        android:id="@+id/ratingLine"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:src="@drawable/solid_line"
+        app:layout_constraintTop_toBottomOf="@id/ratingHours"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"
+
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ratingRV"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintTop_toBottomOf="@id/ratingLine"
+        android:layout_marginTop="20dp"
+        tools:listitem="@layout/rating_item"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

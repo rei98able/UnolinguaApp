@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/logInThroughEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_up_through_email"
+        android:fontFamily="@font/rubik_medium"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="20dp"
+        />
+
+    <EditText
+        android:id="@+id/logInEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logInThroughEmail"
+        android:hint="@string/sign_up_email"
+        android:fontFamily="@font/rubik_medium"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="60dp"
+        />
+
+    <EditText
+        android:id="@+id/logInPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logInEmail"
+        android:hint="@string/sign_up_password"
+        android:fontFamily="@font/rubik_medium"
+        android:layout_margin="30dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/logInButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/logInPassword"
+        android:background="@drawable/rectangle"
+        android:layout_margin="40dp"
+        android:fontFamily="@font/rubik_bold"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:text="@string/log_in_enter"
+        android:textAllCaps="false"
+        />
+
+    <TextView
+        android:id="@+id/logInOrUse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/log_in_or_use"
+        android:fontFamily="@font/rubik_medium"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logInButton"
+        android:layout_margin="20dp"
+        />
+
+
+    <ImageButton
+        android:id="@+id/logInFacebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ic_iconfinder_facebook_834722"
+        app:layout_constraintTop_toBottomOf="@+id/logInOrUse"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/logInGoogle"
+        />
+    <ImageButton
+        android:id="@+id/logInGoogle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_google"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/logInOrUse"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/logInFacebook"
+        />
+    <TextView
+        android:id="@+id/logInFacebookText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubik_bold"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:text="@string/sign_up_facebook"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@id/logInFacebook"
+        app:layout_constraintEnd_toEndOf="@id/logInFacebook"
+        app:layout_constraintTop_toBottomOf="@id/logInFacebook"
+        />
+    <TextView
+        android:id="@+id/logInGoogleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubik_bold"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:text="@string/sign_up_google"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@id/logInGoogle"
+        app:layout_constraintEnd_toEndOf="@id/logInGoogle"
+        app:layout_constraintTop_toBottomOf="@id/logInGoogle"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/profileScroll"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="60dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    >
+
+
+        <TextView
+            android:id="@+id/profileUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rubik_bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            android:textSize="22sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Chernyshev Andrew"
+            />
+
+        <ImageView
+            android:id="@+id/profileSexIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_sex"
+            android:layout_marginTop="5dp"
+            app:layout_constraintTop_toBottomOf="@id/profileUserName"
+            app:layout_constraintStart_toStartOf="@id/profileUserName"
+            />
+
+        <TextView
+            android:id="@+id/profileUserLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            app:layout_constraintStart_toEndOf="@+id/profileSexIcon"
+            app:layout_constraintTop_toTopOf="@id/profileSexIcon"
+            android:fontFamily="@font/rubik_medium"
+            android:textColor="@color/grey"
+            android:textSize="14sp"
+            tools:text="rei98able"
+            />
+
+        <ImageView
+            android:id="@+id/profileLocationIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_location"
+            android:layout_marginTop="5dp"
+            app:layout_constraintTop_toBottomOf="@id/profileSexIcon"
+            app:layout_constraintStart_toStartOf="@id/profileSexIcon"
+            />
+
+        <TextView
+            android:id="@+id/profileLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rubik_medium"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_marginStart="5dp"
+            tools:text="USA"
+            app:layout_constraintStart_toEndOf="@id/profileLocationIcon"
+            app:layout_constraintTop_toTopOf="@id/profileLocationIcon"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/profileChangePhotoButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_new_photo"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="I"
+            android:textSize="50sp"
+            android:textColor="@color/grey"
+            app:layout_constraintTop_toTopOf="@id/profileUserName"
+            />
+
+        <ImageView
+            android:id="@+id/profileLine"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:src="@drawable/solid_line"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@id/profileLocationIcon"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+
+        <TextView
+            android:id="@+id/profileStatistics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rubik_bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            android:textSize="22sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/profileLine"
+            android:text="@string/profile_statistics"
+            />
+
+        <ImageView
+            android:id="@+id/profileDaysBox"
+            android:layout_width="68dp"
+            android:layout_height="86dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/rectangle_blue"
+            app:layout_constraintTop_toBottomOf="@id/profileStatistics"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/profileDaysCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rubik_bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="20dp"
+            android:textSize="30sp"
+            app:layout_constraintStart_toStartOf="@id/profileDaysBox"
+            app:layout_constraintEnd_toEndOf="@id/profileDaysBox"
+            app:layout_constraintTop_toTopOf="@id/profileDaysBox"
+            app:layout_constraintBottom_toBottomOf="@id/profileDaysBox"
+            android:text="@string/fragment_lesson_default_value"
+            />
+
+        <TextView
+            android:id="@+id/profileDays"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rubik_light"
+            android:textColor="@color/grey_light_profile"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@id/profileDaysCount"
+            app:layout_constraintEnd_toEndOf="@id/profileDaysCount"
+            app:layout_constraintTop_toBottomOf="@id/profileDaysCount"
+            android:text="@string/profile_days"
+            />
+
+        <ImageView
+            android:id="@+id/profileHoursBox"
+            android:layout_width="68dp"
+            android:layout_height="86dp"
+            android:src="@drawable/rectangle_pink"
+            app:layout_constraintTop_toTopOf="@id/profileDaysBox"
+            app:layout_constraintStart_toEndOf="@id/profileDaysBox"
+            app:layout_constraintEnd_toStartOf="@id/profileLessonsBox"
+            />
+
+        <TextView
+            android:id="@+id/profileHoursCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rubik_bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="20dp"
+            android:textSize="30sp"
+            app:layout_constraintStart_toStartOf="@id/profileHoursBox"
+            app:layout_constraintEnd_toEndOf="@id/profileHoursBox"
+            app:layout_constraintTop_toTopOf="@id/profileHoursBox"
+            app:layout_constraintBottom_toBottomOf="@id/profileHoursBox"
+            android:text="@string/fragment_lesson_default_value"
+            />
+
+        <TextView
+            android:id="@+id/profileHours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rubik_light"
+            android:textColor="@color/grey_light_profile"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@id/profileHoursCount"
+            app:layout_constraintEnd_toEndOf="@id/profileHoursCount"
+            app:layout_constraintTop_toBottomOf="@id/profileHoursCount"
+            android:text="@string/profile_hours"
+            />
+        <ImageView
+            android:id="@+id/profileLessonsBox"
+            android:layout_width="68dp"
+            android:layout_height="86dp"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/rectangle_yellow"
+            app:layout_constraintTop_toTopOf="@id/profileDaysBox"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/profileLessonsCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rubik_bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="20dp"
+            android:textSize="30sp"
+            app:layout_constraintStart_toStartOf="@id/profileLessonsBox"
+            app:layout_constraintEnd_toEndOf="@id/profileLessonsBox"
+            app:layout_constraintTop_toTopOf="@id/profileLessonsBox"
+            app:layout_constraintBottom_toBottomOf="@id/profileLessonsBox"
+            android:text="@string/fragment_lesson_default_value"
+            />
+
+        <TextView
+            android:id="@+id/profileLessons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rubik_light"
+            android:textColor="@color/grey_light_profile"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@id/profileLessonsCount"
+            app:layout_constraintEnd_toEndOf="@id/profileLessonsCount"
+            app:layout_constraintTop_toBottomOf="@id/profileLessonsCount"
+            android:text="@string/profile_days"
+            />
+
+        <ImageView
+            android:id="@+id/profileLineBelowStatistics"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:src="@drawable/solid_line"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@id/profileDaysBox"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/profileWeakPoints"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rubik_bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            android:textSize="22sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/profileLineBelowStatistics"
+            android:text="@string/profile_weak_points"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:spanCount="2"
+            app:layout_constraintTop_toBottomOf="@id/profileWeakPoints"
+            android:layout_marginTop="20dp"
+            tools:listitem="@layout/weak_point_item"
+            />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:background="@drawable/rectangle_green"
+    android:layout_margin="5dp"
+    >
+
+    <TextView
+        android:id="@+id/weakPointLessonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubik_bold"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:layout_margin="10dp"
+        android:text="@string/lessons_lesson_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/lessonsStar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/weakPointLessonName"
+        app:layout_constraintBottom_toBottomOf="@id/weakPointLessonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="35dp"
+        android:src="@drawable/ic_ant_design_star_filled"
+        />
+
+    <TextView
+        android:id="@+id/lessonsTaskOutOfTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        app:layout_constraintStart_toEndOf="@id/lessonsStar"
+        app:layout_constraintTop_toTopOf="@id/lessonsStar"
+        tools:text="3 /"
+        android:fontFamily="@font/rubik_medium"
+        android:textSize="8sp" />
+
+    <TextView
+        android:id="@+id/lessonsTaskTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        app:layout_constraintStart_toEndOf="@id/lessonsTaskOutOfTotal"
+        app:layout_constraintTop_toTopOf="@id/lessonsTaskOutOfTotal"
+        tools:text="21"
+        android:fontFamily="@font/rubik_medium"
+        android:textSize="8sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/weakPointItemInnerRV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/weakPointLessonName"
+        app:layout_constraintBottom_toTopOf="@id/weakPointRepeatButton"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="30dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/weak_point_inner_item"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/weakPointRepeatButton"
+        android:layout_width="104dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/rectangle"
+        android:text="@string/profile_weak_repeat_all"
+        android:textAllCaps="false"
+        android:textSize="10dp"
+        android:fontFamily="@font/rubik_medium"
+        android:textColor="@color/white"
+        />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

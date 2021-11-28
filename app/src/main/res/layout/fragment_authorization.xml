@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/authorizationHead"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:src="@drawable/ic_sing_in_head"
+        android:layout_marginBottom="25dp"
+        app:layout_constraintDimensionRatio="388:316"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/authorizationWelcome"
+        app:layout_constraintStart_toStartOf="parent"
+    />
+    <TextView
+        android:id="@+id/authorizationWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubik_bold"
+        android:textColor="@color/black"
+        android:text="@string/welcome"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/authorizationLatin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubik_medium"
+        android:textColor="@color/black"
+        android:text="@string/welcome_latin"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:padding="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/authorizationWelcome"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/authorizationLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/authorizationLatin"
+        android:background="@drawable/rectangle"
+        android:layout_margin="40dp"
+        android:fontFamily="@font/rubik_bold"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:text="@string/welcome_login"
+        android:textAllCaps="false"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/authorizationLogin"
+        android:background="@drawable/rectangle_with_borders"
+        android:fontFamily="@font/rubik_bold"
+        android:text="@string/welcome_signup"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textColor="@color/blue_light"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
